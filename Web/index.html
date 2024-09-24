@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Art Generator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5">AI Art Generator</h1>
+        <form method="POST" action="/generate">
+            <div class="form-group">
+                <label for="prompt">Enter a prompt to generate art:</label>
+                <input type="text" class="form-control" id="prompt" name="prompt" placeholder="A beautiful landscape..." required>
+            </div>
+            <button type="submit" class="btn btn-primary">Generate</button>
+        </form>
+
+        
+        <div class="mt-5">
+            <h3>Prompt: </h3>
+            <img src="" alt="Generated Image" class="img-fluid">
+        </div>
+        
+    </div>
+</body>
+</html>
